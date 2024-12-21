@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(225, 255, 143);
+    background-image: url(./images/star1.svg),
+        url(./images/line1.svg),
+        url(./images/line2.svg),
+        url(./images/line3.svg),
+        url(./images/line4.svg),
+        url(./images/triangle.svg),
+        url(./images/star2.svg),
+        url(./images/star3.svg),
+        url(./images/star4.svg),
+        url(./images/star5.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% + 355px) -260px,
+        calc(100% - 302px) -10px,
+        calc(100% - 270px) 252px,
+        calc(100% - 30px) 380px,
+        calc(100% - 98px) 664px,
+        calc(100% - 149px) 470px,
+        calc(100% - 380px) 566px,
+        calc(100% - 491px) 539px,
+        190px 70px,
+        100px 93px;
+
+
+
+    &__title {
+        padding-top: 196px;
+        color: rgb(32, 32, 39);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 122%;
+        max-width: 769px;
+    }
+
+    &__text {
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 133%;
+        margin-top: 24px;
+        max-width: 720px;
+
+        &_bold {
+            font-weight: 600;
+        }
+    }
+
+
+    &__btn {
+        display: block;
+        margin-top: 48px;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        width: 247px;
+        height: 66px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        padding: 16px 28px 16px 28px;
+        transition: all 0.7s;
+        cursor: url(./images/cursor.svg), pointer;
+    }
+
+    &__btn:hover {
+        border: 1px solid rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+
+
+}
+
+.games {
+    min-height: 1470px;
+    background: rgb(32, 32, 39);
+    background-image: url(./images/games_star1.svg),
+        url(./images/games_star2.svg),
+        url(./images/games__star3.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% + 40px) 140px,
+        90px 960px,
+        30px 940px;
+    padding-top: 94px;
+    padding-bottom: 92px;
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 122px;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 133%;
+        max-width: 788px;
+    }
+
+    &__card-block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        margin-top: 72px;
+    }
+
+
+    &__link:hover {
+        cursor: url(./images/cursor.svg), pointer;
+    }
+
+}
+
+.game-card {
+    width: 378px;
+    height: 551px;
+    border-radius: 30px;
+    box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+    transition: all 0.5s;
+
+    &__img {
+        border-radius: 30px;
+        height: 314px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .img2 {
+        background: rgb(253, 173, 0);
+    }
+
+    .img3 {
+        background: rgb(86, 94, 239);
+    }
+
+    .img4 {
+        background: rgb(39, 26, 88);
+    }
+
+    .img5 {
+        background: rgb(153, 209, 0);
+    }
+
+    .img6 {
+        background: rgb(39, 26, 88);
+    }
+
+    &__image {
+        width: 170%;
+        height: auto;
+        position: absolute;
+        top: -150px;
+        left: -135px;
+    }
+
+    .image3 {
+        width: 200%;
+        top: -80px;
+        left: -200px;
+    }
+
+    .image4,
+    .image5 {
+        top: -110px;
+    }
+
+
+    &__info {
+        padding: 32px;
+        height: 159px;
+    }
+
+    &__number {
+        display: block;
+        width: 108px;
+        height: 36px;
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        color: rgb(32, 32, 39);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        padding: 8px 16px 10px 16px;
+    }
+
+    &__name {
+        color: rgb(32, 32, 39);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 122%;
+        margin-top: 16px;
+        width: 300px;
+    }
+}
+
+.games__link:hover .game-card {
+    height: 570px;
+    // transform: scale(1.05);
+    transform-origin: top;
+}
