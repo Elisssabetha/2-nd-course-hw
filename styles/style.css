@@ -113,13 +113,13 @@ a {
   background: rgb(255, 255, 255);
   transition: all 0.5s;
 }
-.game-card__small {
+.game-card-small {
   height: 473px;
 }
-.game-card__med {
+.game-card-med {
   height: 512px;
 }
-.game-card__big {
+.game-card-big {
   height: 551px;
 }
 .game-card__img {
