@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework1</title>
+    <title>Мини-игры</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    
+    <main class="main center">
+        <h1 class="main__title">Добро пожаловать на&nbsp;мой сайт мини-игр</h1>
+        <p class="main__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span
+                class="main__text-bold">«Поехали!»</span> и <span class="main__text-bold">приступай</span>.</p>
+        <a href="#about_games" class="main__btn">Поехали!</a>
+    </main>
+
+    <section class="games center" id="about_games">
+        <h2 class="games__title">Об играх</h2>
+        <p class="games__text">В моей коллекции представлено 6 игр на разные темы.</p>
+        <p class="games__text">Игры несложные — в них может поиграть
+            каждый.</p>
+        <p class="games__text">Все игры доступны для пользования.</p>
+
+
+        <div class="games__card-block">
+            <a href="#" class="games__link">
+                <div class="game-card game-card-small">
+                    <div class="game-card__img">
+                        <img src="./styles/images/game1.jpeg" alt="блоки с числами и в середине знак вопроса"
+                            class="game-card__image">
+                    </div>
+                    <div class="game-card__info">
+                        <p class="game-card__number">Игра №1</p>
+                        <h3 class="game-card__name">Угадай число</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="games__link">
+                <div class="game-card game-card-med">
+                    <div class="game-card__img img2">
+                        <img src="./styles/images/game2.png" alt="блоки с числами и в середине знак вопроса"
+                            class="game-card__image">
+                    </div>
+                    <div class="game-card__info">
+                        <p class="game-card__number">Игра №2</p>
+                        <h3 class="game-card__name">Простая арифметика</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="games__link">
+                <div class="game-card game-card-small">
+                    <div class="game-card__img img3">
+                        <img src="./styles/images/game3.png" alt="блоки с числами и в середине знак вопроса"
+                            class="game-card__image image3">
+                    </div>
+                    <div class="game-card__info">
+                        <p class="game-card__number">Игра №3</p>
+                        <h3 class="game-card__name">Переверни текст</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="games__link">
+                <div class="game-card game-card-big">
+                    <div class="game-card__img img4">
+                        <img src="./styles/images/game4.png" alt="блоки с числами и в середине знак вопроса"
+                            class="game-card__image image4">
+                    </div>
+                    <div class="game-card__info">
+                        <p class="game-card__number">Игра №4</p>
+                        <h3 class="game-card__name">Камень, ножницы, бумага</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="games__link games__link-low">
+                <div class="game-card game-card-med">
+                    <div class="game-card__img img5">
+                        <img src="./styles/images/game5.png" alt="блоки с числами и в середине знак вопроса"
+                            class="game-card__image image5">
+                    </div>
+                    <div class="game-card__info">
+                        <p class="game-card__number">Игра №5</p>
+                        <h3 class="game-card__name">Простая викторина</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="games__link">
+                <div class="game-card game-card-big">
+                    <div class="game-card__img img6">
+                        <img src="./styles/images/game6.png" alt="блоки с числами и в середине знак вопроса"
+                            class="game-card__image">
+                    </div>
+                    <div class="game-card__info">
+                        <p class="game-card__number">Игра №6</p>
+                        <h3 class="game-card__name">Генератор случайных цветов</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
 </body>
+
 </html>
