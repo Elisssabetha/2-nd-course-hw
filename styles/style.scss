@@ -102,10 +102,10 @@ a {
         url(./images/games__star3.svg);
     background-repeat: no-repeat;
     background-position: calc(100% + 40px) 140px,
-        90px 960px,
-        30px 940px;
+        90px 900px,
+        30px 870px;
     padding-top: 94px;
-    padding-bottom: 92px;
+    padding-bottom: 50px;
 
     &__title {
         color: rgb(255, 255, 255);
@@ -132,6 +132,7 @@ a {
 
     &__link {
         align-content: flex-start;
+
         &-low {
             align-content: flex-end;
         }
@@ -170,26 +171,6 @@ a {
         width: 100%;
         overflow: hidden;
         position: relative;
-    }
-
-    .img2 {
-        background: rgb(253, 173, 0);
-    }
-
-    .img3 {
-        background: rgb(86, 94, 239);
-    }
-
-    .img4 {
-        background: rgb(39, 26, 88);
-    }
-
-    .img5 {
-        background: rgb(153, 209, 0);
-    }
-
-    .img6 {
-        background: rgb(39, 26, 88);
     }
 
     &__image {
@@ -240,7 +221,163 @@ a {
     }
 }
 
+.img1 {
+    background: rgb(173, 97, 255);
+}
+
+.img2 {
+    background: rgb(253, 173, 0);
+}
+
+.img3 {
+    background: rgb(86, 94, 239);
+}
+
+.img4 {
+    background: rgb(39, 26, 88);
+}
+
+.img5 {
+    background: rgb(153, 209, 0);
+}
+
+.img6 {
+    background: rgb(39, 26, 88);
+}
+
 .games__link:hover .game-card {
     transform: scale(1.05);
     transform-origin: top;
+}
+
+.mini-games {
+    background: rgb(32, 32, 39);
+    padding-bottom: 144px;
+    padding-top: 46px;
+    background-image: url(./images/ministar1.svg),
+        url(./images/ministar2.svg),
+        url(./images/ministar3.svg),
+        url(./images/ministar4.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 80px) 120px,
+        calc(100% - 160px) 80px,
+        calc(100% - 80px) calc(100% - 80px),
+        calc(100% - 160px) calc(100% - 60px);
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 122%;
+    }
+
+    &__card-block {
+        margin-top: 72px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+}
+
+.minigame-card {
+    width: 100%;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+    display: flex;
+
+    &__img {
+        width: 50%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 30px;
+    }
+
+    &__image {
+        width: 140%;
+        height: auto;
+        position: absolute;
+        top: -160px;
+        left: -95px;
+    }
+
+    .image-for-mini-3 {
+        width: 200%;
+        top: -120px;
+        left: -300px;
+    }
+
+    .image-for-mini-4,
+    .image-for-mini-5 {
+        top: -100px;
+        left: -120px;
+    }
+
+    &__info {
+        width: 50%;
+        padding: 48px;
+    }
+
+    &__name {
+        color: rgb(32, 32, 39);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 123%;
+        margin-bottom: 24px;
+        max-width: 400px;
+    }
+
+    &__desc {
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 133%;
+        margin-bottom: 36px;
+        max-width: 420px;
+
+        &-wide {
+            max-width: 100%;
+        }
+    }
+
+    &__btn {
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        font: inherit;
+        width: 247px;
+        height: 66px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        padding: 16px 28px 16px 28px;
+        cursor: url(./images/cursor.svg), pointer;
+    }
+
+    &__btn:hover {
+        border: 1px solid rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+
+
+}
+
+.minigame-card:nth-child(2n-1) {
+    flex-direction: row-reverse;
+}
+
+.footer {
+    height: 150px;
+    background: rgb(189, 237, 53);
+    padding-top: 61px;
+
+    &__text {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 121%;
+        text-align: center;
+    }
 }
