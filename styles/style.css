@@ -234,7 +234,7 @@ a {
 
 .minigame-card {
   width: 100%;
-  min-height: 500px;
+  height: 500px;
   background: rgb(255, 255, 255);
   border-radius: 30px;
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
@@ -441,5 +441,91 @@ a {
     color: rgb(0, 0, 0);
     font-size: 16px;
     line-height: 125%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .main-page {
+    background-image: url(./images/mobistar1.svg), url(./images/mobilestar2.svg), url(./images/mobilestar3.svg), url(./images/mobilestar4.svg), url(./images/mobilestar5.svg);
+    background-position: calc(100% + 90px) -85px, calc(100% - 34px) calc(100% - 79px), calc(100% - 86px) calc(100% - 125px), 37px 97px, 91px 64px;
+  }
+  .main-page__title {
+    font-size: 54px;
+  }
+  .main-page__animation-line {
+    height: 60px;
+  }
+  .games {
+    padding-top: 64px;
+  }
+  .games__title {
+    font-size: 54px;
+  }
+  .games__card-block {
+    row-gap: 32px;
+    justify-content: center;
+  }
+  .game-card {
+    width: 340px;
+    height: 512px;
+  }
+  .game-card-small {
+    height: 512px;
+  }
+  .game-card-big {
+    height: 512px;
+  }
+  .game-card__name {
+    width: 100%;
+    font-size: 28px;
+  }
+  .mini-games {
+    padding-bottom: 96px;
+  }
+  .mini-games__title {
+    font-size: 54px;
+  }
+  .minigame-card {
+    height: 382px;
+  }
+  .minigame-card__info {
+    padding: 32px;
+  }
+  .minigame-card__image {
+    top: -50px;
+    left: -60px;
+  }
+  .minigame-card .image-for-mini-3 {
+    width: 200%;
+    top: -50px;
+    left: -200px;
+  }
+  .minigame-card .image-for-mini-4,
+  .minigame-card .image-for-mini-5 {
+    top: -30px;
+    left: -60px;
+  }
+  .minigame-card__name {
+    font-size: 32px;
+    margin-bottom: 18px;
+    max-width: 100%;
+  }
+  .minigame-card__desc {
+    font-size: 24px;
+    margin-bottom: 18px;
+    max-width: 100%;
+  }
+  .minigame-card__btn {
+    height: 45px;
+    padding: 8px 28px;
+    line-height: 120%;
+    width: 200px;
+  }
+  .footer {
+    height: 120px;
+    padding-top: 48px;
   }
 }/*# sourceMappingURL=style.css.map */
