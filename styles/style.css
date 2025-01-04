@@ -6,6 +6,7 @@
 
 body {
   font-family: "Montserrat";
+  overflow-x: hidden;
 }
 
 a {
@@ -19,7 +20,7 @@ a {
 
 .main-page {
   position: relative;
-  height: 100vh;
+  height: 800px;
   max-width: 100vw;
   background: rgb(225, 255, 143);
   background-image: url(./images/star1.svg), url(./images/line1.svg), url(./images/line2.svg), url(./images/line3.svg), url(./images/line4.svg), url(./images/triangle.svg), url(./images/star2.svg), url(./images/star3.svg), url(./images/star4.svg), url(./images/star5.svg);
@@ -76,6 +77,20 @@ a {
   bottom: 0;
   left: 0;
   width: 100vw;
+  padding: 27px 49px 27px 49px;
+  display: flex;
+  -moz-column-gap: 51px;
+       column-gap: 51px;
+  overflow: hidden;
+}
+.main-page__animation-line-text {
+  color: rgb(32, 32, 39);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .games {
@@ -246,22 +261,23 @@ a {
   position: relative;
   border-radius: 30px;
 }
-.minigame-card__image {
-  width: 140%;
-  height: auto;
-  position: absolute;
-  top: -160px;
-  left: -95px;
+.minigame-card .img1 {
+  background-image: url(./images/game1_desktop.png);
 }
-.minigame-card .image-for-mini-3 {
-  width: 200%;
-  top: -120px;
-  left: -300px;
+.minigame-card .img2 {
+  background-image: url(./images/game2_desktop.png);
 }
-.minigame-card .image-for-mini-4,
-.minigame-card .image-for-mini-5 {
-  top: -100px;
-  left: -120px;
+.minigame-card .img3 {
+  background-image: url(./images/game3_desktop.png);
+}
+.minigame-card .img4 {
+  background-image: url(./images/game4_desktop.png);
+}
+.minigame-card .img5 {
+  background-image: url(./images/game5_desktop.png);
+}
+.minigame-card .img6 {
+  background-image: url(./images/game6_desktop.png);
 }
 .minigame-card__info {
   width: 50%;
@@ -333,6 +349,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 700px;
   }
   .main-page__title {
     padding-top: 147px;
@@ -362,6 +379,15 @@ a {
   }
   .main-page__animation-line {
     height: 51.34px;
+    padding: 16px 17px 16px 17px;
+    -moz-column-gap: 27.4px;
+         column-gap: 27.4px;
+  }
+  .main-page__animation-line-text {
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
   }
   .games {
     display: none;
@@ -381,23 +407,38 @@ a {
   }
   .minigame-card {
     flex-direction: column;
+    height: 528.63px;
+  }
+  .minigame-card-med {
+    height: 567.63px;
+  }
+  .minigame-card-high {
+    height: 606.63px;
+  }
+  .minigame-card-highest {
+    height: 626.63px;
   }
   .minigame-card__img {
     width: 100%;
-    height: 343px;
+    height: 284.93px;
   }
-  .minigame-card__image {
-    width: 200%;
-    left: -170px;
+  .minigame-card .img1 {
+    background-image: url(./images/game-1_mobile.png);
   }
-  .minigame-card .image-for-mini-3 {
-    width: 210%;
-    top: -50px;
-    left: -200px;
+  .minigame-card .img2 {
+    background-image: url(./images/game2_mobile.png);
   }
-  .minigame-card .image-for-mini-4,
-  .minigame-card .image-for-mini-5 {
-    left: -160px;
+  .minigame-card .img3 {
+    background-image: url(./images/game3_mobile.png);
+  }
+  .minigame-card .img4 {
+    background-image: url(./images/game4_mobile.png);
+  }
+  .minigame-card .img5 {
+    background-image: url(./images/game5_mobile.png);
+  }
+  .minigame-card .img6 {
+    background-image: url(./images/game6_mobile.png);
   }
   .minigame-card__info {
     width: 100%;
@@ -493,20 +534,6 @@ a {
   }
   .minigame-card__info {
     padding: 32px;
-  }
-  .minigame-card__image {
-    top: -50px;
-    left: -60px;
-  }
-  .minigame-card .image-for-mini-3 {
-    width: 200%;
-    top: -50px;
-    left: -200px;
-  }
-  .minigame-card .image-for-mini-4,
-  .minigame-card .image-for-mini-5 {
-    top: -30px;
-    left: -60px;
   }
   .minigame-card__name {
     font-size: 32px;
