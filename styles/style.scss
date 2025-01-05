@@ -6,6 +6,7 @@
 
 body {
     font-family: "Montserrat";
+    overflow-x: hidden;
 }
 
 a {
@@ -19,7 +20,7 @@ a {
 
 .main-page {
     position: relative;
-    height: 100vh;
+    height: 800px;
     max-width: 100vw;
     background: rgb(225, 255, 143);
     background-image: url(./images/star1.svg),
@@ -101,6 +102,20 @@ a {
         bottom: 0;
         left: 0;
         width: 100vw;
+        padding: 27px 49px 27px 49px;
+        display: flex;
+        column-gap: 51px;
+        overflow: hidden;
+    }
+
+    &__animation-line-text {
+        color: rgb(32, 32, 39);
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        white-space: nowrap;
     }
 }
 
@@ -305,24 +320,28 @@ a {
         border-radius: 30px;
     }
 
-    &__image {
-        width: 140%;
-        height: auto;
-        position: absolute;
-        top: -160px;
-        left: -95px;
+    .img1 {
+        background-image: url(./images/game1_desktop.png);
     }
 
-    .image-for-mini-3 {
-        width: 200%;
-        top: -120px;
-        left: -300px;
+    .img2 {
+        background-image: url(./images/game2_desktop.png);
     }
 
-    .image-for-mini-4,
-    .image-for-mini-5 {
-        top: -100px;
-        left: -120px;
+    .img3 {
+        background-image: url(./images/game3_desktop.png);
+    }
+
+    .img4 {
+        background-image: url(./images/game4_desktop.png);
+    }
+
+    .img5 {
+        background-image: url(./images/game5_desktop.png);
+    }
+
+    .img6 {
+        background-image: url(./images/game6_desktop.png);
     }
 
     &__info {

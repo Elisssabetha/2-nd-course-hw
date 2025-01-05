@@ -18,6 +18,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 700px;
 
         &__title {
             padding-top: 147px;
@@ -52,6 +53,15 @@
 
         &__animation-line {
             height: 51.34px;
+            padding: 16px 17px 16px 17px;
+            column-gap: 27.4px;
+        }
+
+        &__animation-line-text {
+            font-size: 16px;
+            line-height: 110%;
+            letter-spacing: 0.64px;
+            text-transform: uppercase;
         }
 
     }
@@ -78,26 +88,47 @@
 
     .minigame-card {
         flex-direction: column;
+        height: 528.63px;
+
+        &-med {
+            height: 567.63px;
+        }
+
+        &-high {
+            height: 606.63px;
+        }
+
+        &-highest {
+            height: 626.63px;
+        }
 
         &__img {
             width: 100%;
-            height: 343px;
+            height: 284.93px;
         }
 
-        &__image {
-            width: 200%;
-            left: -170px;
+        .img1 {
+            background-image: url(./images/game-1_mobile.png);
         }
 
-        .image-for-mini-3 {
-            width: 210%;
-            top: -50px;
-            left: -200px;
+        .img2 {
+            background-image: url(./images/game2_mobile.png);
         }
 
-        .image-for-mini-4,
-        .image-for-mini-5 {
-            left: -160px;
+        .img3 {
+            background-image: url(./images/game3_mobile.png);
+        }
+
+        .img4 {
+            background-image: url(./images/game4_mobile.png);
+        }
+
+        .img5 {
+            background-image: url(./images/game5_mobile.png);
+        }
+
+        .img6 {
+            background-image: url(./images/game6_mobile.png);
         }
 
         &__info {
