@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat";
     overflow-x: hidden;
@@ -137,7 +141,7 @@ a {
         color: rgb(255, 255, 255);
         font-size: 64px;
         font-weight: 700;
-        line-height: 122px;
+        line-height: 78.02px;
         margin-bottom: 24px;
     }
 
@@ -355,7 +359,7 @@ a {
         font-weight: 700;
         line-height: 123%;
         margin-bottom: 24px;
-        max-width: 400px;
+        max-width: 450px;
     }
 
     &__desc {
