@@ -74,7 +74,7 @@ const arithmeticTasks = () => {
     const [task, result] = getTask();
 
     while (true) {
-      useranswer = prompt(task);
+      let useranswer = prompt(task);
 
       if (useranswer === null) {
         alert(
