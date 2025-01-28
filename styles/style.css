@@ -160,22 +160,6 @@ a {
   overflow: hidden;
   position: relative;
 }
-.game-card__image {
-  width: 170%;
-  height: auto;
-  position: absolute;
-  top: -150px;
-  left: -135px;
-}
-.game-card .image3 {
-  width: 200%;
-  top: -80px;
-  left: -200px;
-}
-.game-card .image4,
-.game-card .image5 {
-  top: -110px;
-}
 .game-card__info {
   padding: 32px;
   height: 159px;
