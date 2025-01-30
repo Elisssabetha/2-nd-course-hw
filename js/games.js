@@ -99,3 +99,71 @@ const arithmeticTasks = () => {
     }
   }
 };
+
+const reverseText = () => {
+  while (true) {
+    let text = prompt("Введите любой текст");
+
+    if (text === null) {
+      alert("Игра завершена.");
+      break;
+    }
+
+    let reversedText = text.split("").reverse().join("");
+    alert(reversedText);
+  }
+};
+
+// Массив вопросов для викторины
+const quiz = [
+  {
+    question: "Какого цвета небо?",
+    options: ["1. Красного", "2. Синего", "3. Зеленого"],
+    correctAnswer: 2,
+  },
+  {
+    question: "Сколько дней в неделе?",
+    options: ["1. Шесть", "2. Семь", "3. Восемь"],
+    correctAnswer: 2,
+  },
+  {
+    question: "Сколько у человека пальцев на одной руке?",
+    options: ["1. Четыре", "2. Пять", "3. Шесть"],
+    correctAnswer: 2,
+  },
+];
+
+const quizGame = (quiz) => {
+  let correctAnswers = 0;
+
+  for (let task of quiz) {
+    let userAnswer;
+
+    while (true) {
+      let option = task.options.join("\n");
+      userAnswer = prompt(
+        `${task.question}\n\n${option}\n\nВведите номер верного варианта ответа.`
+      );
+
+      if (userAnswer === null) {
+        alert(`Игра завершена. Верных ответов: ${correctAnswers}`);
+        return;
+      }
+
+      userAnswer = Number(userAnswer);
+
+      if (!isNaN(userAnswer)) {
+        break;
+      } else {
+        alert("Вы ввели не номер ответа. Попробуйте еще раз.");
+      }
+    }
+
+    if (userAnswer === task.correctAnswer) {
+      correctAnswers++;
+    }
+  }
+  
+  alert(`Верных ответов: ${correctAnswers} (из ${quiz.length})`);
+};
+
