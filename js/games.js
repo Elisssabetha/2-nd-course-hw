@@ -163,7 +163,92 @@ const quizGame = (quiz) => {
       correctAnswers++;
     }
   }
-  
+
   alert(`Верных ответов: ${correctAnswers} (из ${quiz.length})`);
+};
+
+const rockPaperScissors = () => {
+  const variants = ["камень", "ножницы", "бумага"];
+  let userChoice, computerChoice;
+  let computerWins = 0;
+  let userWins = 0;
+  let draw = 0;
+  let totalGames = 0;
+
+  while (true) {
+    userChoice = prompt(
+      "Введите свой вариант: камень, ножницы или бумага"
+    );
+
+    //нажатие отмены
+    if (userChoice === null) {
+      alert(
+        `Игра завершена. Всего было сыграно ${totalGames} игр.\nВаши победы: ${userWins}\nПобеды компьютера: ${computerWins}\nНичьи: ${draw}`
+      );
+      return;
+    }
+
+    userChoice = userChoice.toLowerCase();
+
+    //некорректный ввод
+    if (!variants.includes(userChoice)) {
+      alert(
+        "Пожалуйста, введите корректный вариант: камень, ножницы или бумага"
+      );
+      continue;
+    }
+
+    computerChoice = variants[Math.floor(Math.random() * 3)];
+    totalGames++;
+
+    switch (userChoice) {
+      case computerChoice:
+        draw++;
+        alert(`Ничья - и вы выбрали, и компьютер выбрали ${userChoice}.`);
+        break;
+
+      case "камень":
+        if (computerChoice === "ножницы") {
+          userWins++;
+          alert(
+            `Вы выиграли! Вы выбрали ${userChoice}, компьютер выбрал ${computerChoice}.`
+          );
+        } else {
+          computerWins++;
+          alert(
+            `Вы проиграли! Вы выбрали ${userChoice}, компьютер выбрал ${computerChoice}.`
+          );
+        }
+        break;
+
+      case "ножницы":
+        if (computerChoice === "бумага") {
+          userWins++;
+          alert(
+            `Вы выиграли! Вы выбрали ${userChoice}, компьютер выбрал ${computerChoice}.`
+          );
+        } else {
+          computerWins++;
+          alert(
+            `Вы проиграли! Вы выбрали ${userChoice}, компьютер выбрал ${computerChoice}.`
+          );
+        }
+        break;
+
+      case "бумага":
+        if (computerChoice === "камень") {
+          userWins++;
+          alert(
+            `Вы выиграли! Вы выбрали ${userChoice}, компьютер выбрал ${computerChoice}.`
+          );
+        } else {
+          computerWins++;
+          alert(
+            `Вы проиграли! Вы выбрали ${userChoice}, компьютер выбрал ${computerChoice}.`
+          );
+        }
+        break;
+    }
+  }
 };
 
