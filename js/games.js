@@ -176,9 +176,7 @@ const rockPaperScissors = () => {
   let totalGames = 0;
 
   while (true) {
-    userChoice = prompt(
-      "Введите свой вариант: камень, ножницы или бумага"
-    );
+    userChoice = prompt("Введите свой вариант: камень, ножницы или бумага");
 
     //нажатие отмены
     if (userChoice === null) {
@@ -251,4 +249,36 @@ const rockPaperScissors = () => {
     }
   }
 };
+
+const getRandomColor = () => {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+};
+
+const changeColorBtnEl = document.querySelector("#random-color-btn");
+const forChangeBgEls = document.querySelectorAll(".games, .mini-games");
+
+
+changeColorBtnEl.addEventListener("click", function (e) {
+  let color = getRandomColor()
+  forChangeBgEls.forEach((el) => {
+    el.style.backgroundColor = color;
+  });
+});
+
+const mainPageBtn = document.querySelector('.main-page__btn');
+
+function updateLink() {
+  if (window.innerWidth < 768) { 
+      mainPageBtn.href = '#mini_games'; 
+  } else {
+      mainPageBtn.href = '#about_games';
+  }
+}
+
+window.addEventListener('load', updateLink);
+window.addEventListener('resize', updateLink);
+
 

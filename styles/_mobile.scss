@@ -54,6 +54,13 @@
         &__animation-line {
             height: 51.34px;
             padding: 16px 17px 16px 17px;
+        }
+
+        &__animation-wrapper {
+            column-gap: 27.4px;
+        }
+
+        &__animation-content {
             column-gap: 27.4px;
         }
 
@@ -62,6 +69,21 @@
             line-height: 110%;
             letter-spacing: 0.64px;
             text-transform: uppercase;
+        }
+
+        &__animation-star {
+            width: 19.34px;
+            height: auto;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+    
+            100% {
+                transform: translateX(calc(-50% - 13.7px));
+            }
         }
 
     }
