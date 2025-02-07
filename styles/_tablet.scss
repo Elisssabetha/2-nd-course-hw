@@ -22,6 +22,7 @@
 
         &__animation-line {
             height: 60px;
+            padding: 20px 24px;
         }
 
     }
@@ -89,6 +90,11 @@
             line-height: 120%;
             width: 200px;
         }
+
+        .img1, .img5, .img4  {
+            background-position: 50% 50%;
+        }
+
     }
 
     .footer {

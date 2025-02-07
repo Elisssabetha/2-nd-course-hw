@@ -71,6 +71,11 @@
             text-transform: uppercase;
         }
 
+        &__animation-star {
+            width: 19.34px;
+            height: auto;
+        }
+
         @keyframes scroll {
             0% {
                 transform: translateX(0);

@@ -121,7 +121,7 @@ a {
   background: rgb(32, 32, 39);
   background-image: url(./images/games_star1.svg), url(./images/games_star2.svg), url(./images/games__star3.svg);
   background-repeat: no-repeat;
-  background-position: calc(100% + 40px) 140px, 90px 900px, 30px 870px;
+  background-position: calc(100% + 76px) 116px, 80px 820px, 60px 770px;
   padding-top: 94px;
   padding-bottom: 50px;
 }
@@ -239,7 +239,7 @@ a {
   padding-top: 46px;
   background-image: url(./images/ministar1.svg), url(./images/ministar2.svg), url(./images/ministar3.svg), url(./images/ministar4.svg);
   background-repeat: no-repeat;
-  background-position: calc(100% - 80px) 120px, calc(100% - 160px) 80px, calc(100% - 80px) calc(100% - 80px), calc(100% - 160px) calc(100% - 60px);
+  background-position: calc(100% - 80px) 120px, calc(100% - 160px) 80px, calc(100% - 90px) calc(100% - 76px), calc(100% - 185px) calc(100% - 50px);
 }
 .mini-games__title {
   color: rgb(255, 255, 255);
@@ -402,6 +402,10 @@ a {
     letter-spacing: 0.64px;
     text-transform: uppercase;
   }
+  .main-page__animation-star {
+    width: 19.34px;
+    height: auto;
+  }
   @keyframes scroll {
     0% {
       transform: translateX(0);
@@ -519,6 +523,7 @@ a {
   }
   .main-page__animation-line {
     height: 60px;
+    padding: 20px 24px;
   }
   .games {
     padding-top: 64px;
@@ -571,6 +576,9 @@ a {
     padding: 8px 28px;
     line-height: 120%;
     width: 200px;
+  }
+  .minigame-card .img1, .minigame-card .img5, .minigame-card .img4 {
+    background-position: 50% 50%;
   }
   .footer {
     height: 120px;
