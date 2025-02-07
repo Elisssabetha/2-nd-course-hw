@@ -108,8 +108,15 @@ a {
         width: 100vw;
         padding: 27px 49px 27px 49px;
         display: flex;
-        column-gap: 51px;
         overflow: hidden;
+        align-items: center;
+    }
+
+    &__animation-content {
+        display: flex;
+        align-items: center;
+        column-gap: 51px;
+        animation: scroll 30s linear infinite;
     }
 
     &__animation-line-text {
@@ -120,6 +127,16 @@ a {
         letter-spacing: 1.4px;
         text-transform: uppercase;
         white-space: nowrap;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
     }
 }
 

@@ -176,9 +176,7 @@ const rockPaperScissors = () => {
   let totalGames = 0;
 
   while (true) {
-    userChoice = prompt(
-      "Введите свой вариант: камень, ножницы или бумага"
-    );
+    userChoice = prompt("Введите свой вариант: камень, ножницы или бумага");
 
     //нажатие отмены
     if (userChoice === null) {
@@ -251,4 +249,22 @@ const rockPaperScissors = () => {
     }
   }
 };
+
+const getRandomColor = () => {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+};
+
+const changeColorBtnEl = document.querySelector("#random-color-btn");
+const forChangeBgEls = document.querySelectorAll(".games, .mini-games");
+
+
+changeColorBtnEl.addEventListener("click", function (e) {
+  let color = getRandomColor()
+  forChangeBgEls.forEach((el) => {
+    el.style.backgroundColor = color;
+  });
+});
 

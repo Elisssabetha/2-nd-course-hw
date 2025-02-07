@@ -83,9 +83,15 @@ a {
   width: 100vw;
   padding: 27px 49px 27px 49px;
   display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+.main-page__animation-content {
+  display: flex;
+  align-items: center;
   -moz-column-gap: 51px;
        column-gap: 51px;
-  overflow: hidden;
+  animation: scroll 30s linear infinite;
 }
 .main-page__animation-line-text {
   color: rgb(32, 32, 39);
@@ -95,6 +101,14 @@ a {
   letter-spacing: 1.4px;
   text-transform: uppercase;
   white-space: nowrap;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .games {
