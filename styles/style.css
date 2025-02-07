@@ -86,12 +86,17 @@ a {
   overflow: hidden;
   align-items: center;
 }
+.main-page__animation-wrapper {
+  display: flex;
+  animation: scroll 25s linear infinite;
+  -moz-column-gap: 51px;
+       column-gap: 51px;
+}
 .main-page__animation-content {
   display: flex;
   align-items: center;
   -moz-column-gap: 51px;
        column-gap: 51px;
-  animation: scroll 30s linear infinite;
 }
 .main-page__animation-line-text {
   color: rgb(32, 32, 39);
@@ -107,7 +112,7 @@ a {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-50% - 25.5px));
   }
 }
 
@@ -382,6 +387,12 @@ a {
   .main-page__animation-line {
     height: 51.34px;
     padding: 16px 17px 16px 17px;
+  }
+  .main-page__animation-wrapper {
+    -moz-column-gap: 27.4px;
+         column-gap: 27.4px;
+  }
+  .main-page__animation-content {
     -moz-column-gap: 27.4px;
          column-gap: 27.4px;
   }
@@ -390,6 +401,14 @@ a {
     line-height: 110%;
     letter-spacing: 0.64px;
     text-transform: uppercase;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-50% - 13.7px));
+    }
   }
   .games {
     display: none;

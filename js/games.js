@@ -268,3 +268,17 @@ changeColorBtnEl.addEventListener("click", function (e) {
   });
 });
 
+const mainPageBtn = document.querySelector('.main-page__btn');
+
+function updateLink() {
+  if (window.innerWidth < 768) { 
+      mainPageBtn.href = '#mini_games'; 
+  } else {
+      mainPageBtn.href = '#about_games';
+  }
+}
+
+window.addEventListener('load', updateLink);
+window.addEventListener('resize', updateLink);
+
+

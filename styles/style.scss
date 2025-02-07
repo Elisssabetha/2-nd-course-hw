@@ -110,13 +110,18 @@ a {
         display: flex;
         overflow: hidden;
         align-items: center;
+        
+    }
+    &__animation-wrapper {
+        display: flex;
+        animation: scroll 25s linear infinite;
+        column-gap: 51px;
     }
 
     &__animation-content {
         display: flex;
         align-items: center;
         column-gap: 51px;
-        animation: scroll 30s linear infinite;
     }
 
     &__animation-line-text {
@@ -135,7 +140,7 @@ a {
         }
 
         100% {
-            transform: translateX(-100%);
+            transform: translateX(calc(-50% - 25.5px));
         }
     }
 }
